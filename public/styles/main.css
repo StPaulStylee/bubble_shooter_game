@@ -104,3 +104,48 @@ body {
   top: 69em;
   width: 100em;
 }
+
+/*start-game*/
+.dialog {
+	background-color: #369;
+	border: 2px solid #99f;
+	border-radius: 3em;
+	color: #fff;
+	display: none;
+	height: 46em;
+	left: 30em;
+	padding: 2em 5em;
+	position: absolute;
+	text-align: center;
+	top: 11em;
+	width: 32em;
+}
+
+.dialog h2 {
+	color: #fff;
+	font-size: 2.8em;
+	margin: 2em 0 2em;
+}
+
+.but-start-game {
+	background-color: #f00;
+	border: 2 px solid #f66;
+	border-radius: 1.5em;
+	cursor: pointer;
+	font-size: 2.8em;
+	font-weight: 700;
+	height: 6em;
+	left: 10em;
+	line-height: 6em;
+	position: absolute;
+	text-shadow: 0 1px 1px #f99;
+	width: 20em;
+}
+
+.but-start-game:hover {
+	background-color: #f33;
+}
+
+#start-game {
+	display: block;
+}
