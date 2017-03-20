@@ -11,7 +11,6 @@ Bubbleshoot.Game = (function($){
       $('.but-start-game').bind('click', startGame);
     };
     let startGame = function () {
-      console.log('clicked');
       $('.but-start-game').unbind('click');
       Bubbleshoot.ui.hideDialog();
     };

@@ -75,7 +75,7 @@ body {
 
 /*top bar*/
 #top-bar {
-  background-color: #369;
+  background-color: #323236;
   color: #fff;
   height: 7em;
   left: 0;
@@ -97,7 +97,7 @@ body {
 
 /*footer-bar*/
 #footer-bar {
-  background-color: #369;
+  background-color: #323236;
   height: 4.8em;
   left: 0;
   position: absolute;
@@ -129,7 +129,7 @@ body {
 
 .but-start-game {
 	background-color: #f00;
-	border: 2 px solid #f66;
+	border: 2px solid #f66;
 	border-radius: 1.5em;
 	cursor: pointer;
 	font-size: 2.8em;
