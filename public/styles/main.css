@@ -95,6 +95,14 @@ body {
   width: 100em;
 }
 
+#board {
+	height: 62em;
+	left: 12em;
+	position: absolute;
+	top: 0;
+	width: 76em;
+}
+
 /*footer-bar*/
 #footer-bar {
   background-color: #323236;
