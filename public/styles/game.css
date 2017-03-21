@@ -76,3 +76,18 @@ body {
   left: 36em;
   top: 47em;
 }
+
+.bubble-0 {
+  background-position: 0 0;
+}
+
+.bubble-1 {
+  background-position: 0 -5em;
+}
+
+.bubble-2 {
+  background-position: 0 -10em;
+}
+.bubble-3 {
+  background-position: 0 -15em;
+}
