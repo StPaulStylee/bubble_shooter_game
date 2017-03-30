@@ -87,6 +87,7 @@ body {
 /*game play area*/
 #game {
   background-color: #fff;
+	clip: auto;
   height: 62em;
   left: 0;
   position: absolute;
