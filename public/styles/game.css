@@ -66,7 +66,7 @@ body {
                                      GAME ELEMENTS
 -------------------------------------------------------------------------------------*/
 .bubble {
-  background-image: url('../audio/images/bubble_sprite_sheet.png');
+  background-image: url('../assets/images/bubble_sprite_sheet.png');
   height: 5em;
   position: absolute;
   width: 5em;

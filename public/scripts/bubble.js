@@ -1,7 +1,7 @@
 var Bubbleshoot = window.Bubbleshoot || {};
 Bubbleshoot.Bubble = (function($){
   let Bubble = function(sprite) {
-    // let that = this; // do I really need this line of code?
+    let that = this; // do I really need this line of code?
     this.getSprite = function() {
       return sprite;
       }
