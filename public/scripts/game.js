@@ -15,6 +15,7 @@ Bubbleshoot.Game = (function($){
       $('.but-start-game').unbind('click');
       Bubbleshoot.ui.hideDialog();
       currentBubble = getNextBubble();
+      $('#game').bind('click', clickGameScreen)
     };
     let getNextBubble = function() {
       let bubble = Bubbleshoot.Bubble.create();
@@ -22,6 +23,9 @@ Bubbleshoot.Game = (function($){
       $('#board').append(bubble.getSprite());
       return bubble;
     };
+    let clickGameScreen = function(e) {
+      let angle = Bubbleshoot.ui. getBubbleAngle(currentBubble.getSprite(),e);
+    }
   };
   return Game;
 })($);
