@@ -2,6 +2,7 @@ var Bubbleshoot = window.Bubbleshoot || {};
 Bubbleshoot.ui = (function($){
   let ui = {
     BUBBLE_DIMS: 44,
+    ROW_HEIGHT: 40,
     init: function() {
 
     },
@@ -39,6 +40,26 @@ Bubbleshoot.ui = (function($){
         duration: duration,
         easing: 'linear'
       });
+    },
+    drawBoard: function(board) {
+      let rows = board.getRows();
+      let gameArea = $('#board');
+      for(let i = 0; i < rows.length; i++) {
+        let row = rows[i];
+        for(let j = 0; j < row.length; j++) {
+          let bubble = row[j];
+          if(bubble) {
+            let sprite = bubble.getSprite();
+            gameArea.append(sprite);
+            let left = j * ui.BUBBLE_DIMS/2;
+            let top = i * ui.ROW_HEIGHT;
+            sprite.css({
+              left: left,
+              top: top
+            });
+          };
+        };
+      };
     }
   };
   return ui;

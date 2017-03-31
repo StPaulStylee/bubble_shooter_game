@@ -18,7 +18,7 @@ Bubbleshoot.Game = (function($){
       currentBubble = getNextBubble();
       board = new Bubbleshoot.Board();
       Bubbleshoot.ui.drawBoard(board);
-      $('#game').bind('click', clickGameScreen)
+      $('#game').bind('click', clickGameScreen);
     };
     let getNextBubble = function() {
       let bubble = Bubbleshoot.Bubble.create();
