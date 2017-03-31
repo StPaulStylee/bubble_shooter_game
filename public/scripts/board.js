@@ -12,7 +12,7 @@ Bubbleshoot.Board = (function($){
   };
   let createLayout = function() {
     let rows = [];
-    for(let i = 0; i < NUM_ROWS, i++) {
+    for(let i = 0; i < NUM_ROWS; i++) {
       let row = [];
       let startCol = i%2 == 0 ? 1 : 0;
       for (let j = startCol; j < NUM_COLS; j+=2) {
@@ -22,6 +22,6 @@ Bubbleshoot.Board = (function($){
       rows.push(row);
     };
     return rows;
-  };
+   };
   return Board;
-});
+})($);
