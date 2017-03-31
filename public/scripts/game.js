@@ -9,11 +9,14 @@ Bubbleshoot.Game = (function($){
   let Game = function() {
     let currentBubble;
     let board;
+    let numBubbles;
+    const MAX_BUBBLES = 70;
     this.init = function () {
       $('.but-start-game').bind('click', startGame);
     };
     let startGame = function () {
       $('.but-start-game').unbind('click');
+      numBubbles = MAX_BUBBLES; // the amount of fireable bubbles per game
       Bubbleshoot.ui.hideDialog();
       currentBubble = getNextBubble();
       board = new Bubbleshoot.Board();
@@ -24,10 +27,11 @@ Bubbleshoot.Game = (function($){
       let bubble = Bubbleshoot.Bubble.create();
       bubble.getSprite().addClass('current-bubble');
       $('#board').append(bubble.getSprite());
+      Bubbleshoot.ui.drawBubblesRemaining(numBubbles);
+      numBubbles--;
       return bubble;
     };
     let clickGameScreen = function(e) {
-      $('#game').unbind('click');
       let angle = Bubbleshoot.ui.getBubbleAngle(currentBubble.getSprite(),e);
       let duration = 750;
       let distance = 1000;
@@ -39,6 +43,7 @@ Bubbleshoot.Game = (function($){
         y: bubbleCoords.top - distY
       };
       Bubbleshoot.ui.fireBubble(currentBubble, coords, duration);
+        currentBubble = getNextBubble();
     };
   };
   return Game;

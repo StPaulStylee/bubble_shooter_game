@@ -60,6 +60,9 @@ Bubbleshoot.ui = (function($){
           };
         };
       };
+    },
+    drawBubblesRemaining: numBubbles => {
+      $('#bubbles-remaining').text(numBubbles);
     }
   };
   return ui;
