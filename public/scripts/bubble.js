@@ -14,6 +14,13 @@ Bubbleshoot.Bubble = (function($){
     this.getRow = function(){
       return row;
     };
+    this.getCoords = function() {
+      let coords = {
+        left: that.getColor() * Bubbleshoot.ui.BUBBLE_DIMS/2 + Bubbleshoot.ui.BUBBLE_DIMS/2,
+        top: that.getRow() * Bubbleshoot.ui.ROW_HEIGHT + Bubbleshoot.ui.BUBBLE_DIMS/2
+      };
+      return coords;
+    };
   };
     Bubble.create = function(rowNum, colorNum, type) {
       if (type === undefined) {
